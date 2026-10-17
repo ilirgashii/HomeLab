@@ -30,7 +30,7 @@ Internet
 
 - **OS:** Ubuntu Server 26.04 on the server, OPNsense on the firewall
 - **Containers:** Docker (application, game server, and further services)
-- **Virtualization:** KVM / libvirt, VM storage on a separate data disk (`/mnt/data`)
+- **Storage:** Separate 512 GB SSD mounted at `/mnt/data`, with `/mnt/data/docker` prepared for service data.
 - **Remote access:** SSH (key-only), Tailscale, SSH from phone via Termius
 - **Hosted:** own web application in Docker, game server in Docker
 - **Domain and email:** personal domain with private email
@@ -55,5 +55,4 @@ Internet
 ## Planned
 
 - Portainer for container management
-- Application hosted in a separate VM
 - Monitoring and backups
