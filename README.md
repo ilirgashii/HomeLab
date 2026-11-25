@@ -44,7 +44,9 @@ flowchart TD
 ### WireGuard VPN & Remote Access
 - Configured a WireGuard VPN endpoint on OPNsense.
 - Created a mobile peer using QR-code import and configured on-demand VPN behavior.
-- Connected remotely over VPN and accessed the Ubuntu Server using SSH.
+- Configured OPNsense Dynamic DNS to update the VPN's AAAA record automatically when the WAN IPv6 address changes.
+- Verified DNS resolution and WireGuard connectivity from both a mobile device and a Windows laptop.
+- Verified SSH access to the Ubuntu Server over WireGuard and opened the private GIXHA dashboard through SSH local port forwarding.
 - Configured SSH key authentication for server administration.
 - Used Tailscale as an additional private remote-access tool.
 
